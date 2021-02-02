@@ -7,6 +7,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Microservices", "Microservi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "User_Management", "User_Management\User_Management.csproj", "{F89880DA-FFB5-4837-B092-E5A729D44154}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Portal", "Portal\Portal.csproj", "{1190255E-D288-4DDC-8219-5B28CFBB6CBC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,12 +19,17 @@ Global
 		{F89880DA-FFB5-4837-B092-E5A729D44154}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F89880DA-FFB5-4837-B092-E5A729D44154}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F89880DA-FFB5-4837-B092-E5A729D44154}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1190255E-D288-4DDC-8219-5B28CFBB6CBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1190255E-D288-4DDC-8219-5B28CFBB6CBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1190255E-D288-4DDC-8219-5B28CFBB6CBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1190255E-D288-4DDC-8219-5B28CFBB6CBC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{F89880DA-FFB5-4837-B092-E5A729D44154} = {5EC9D4F2-A6B3-45C8-B968-24D47612CA0C}
+		{1190255E-D288-4DDC-8219-5B28CFBB6CBC} = {5EC9D4F2-A6B3-45C8-B968-24D47612CA0C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {15CF774C-CF79-436D-90BC-58937AEA277B}
