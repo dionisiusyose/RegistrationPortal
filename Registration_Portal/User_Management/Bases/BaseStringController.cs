@@ -10,13 +10,13 @@ namespace User_Management.Bases
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class BasesControllerString<TEntity, TRepository> : ControllerBase
+    public class BaseStringController<TEntity, TRepository> : ControllerBase
         where TEntity : class, IEntityString
         where TRepository : IRepositoryString<TEntity>
     {
         private readonly TRepository _repository;
 
-        public BasesControllerString(TRepository repository)
+        public BaseStringController(TRepository repository)
         {
             this._repository = repository;
         }

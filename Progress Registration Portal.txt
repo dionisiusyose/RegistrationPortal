@@ -1,0 +1,20 @@
+Portal Registration Job Description
+1. Create User Management API
+>> User
+v	- Regitrasi
+v	- Login
+	- Ganti Password
+	- Lupa Password
+	- Edit Personal Data
+	- Edit Data Pendidikan
+>> Admin
+	- Login Admin
+	- Admin CRUD
+2. Create Registration API
+>> User
+	- Portal Registrasi
+	- Ubah data jadi PDF
+	- Kirim Email ke Admin dan ke user
+3. Create Login UI
+4. Create Admin Panel
+5. Create User Registration Portal

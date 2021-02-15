@@ -5,9 +5,9 @@ VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Microservices", "Microservices", "{5EC9D4F2-A6B3-45C8-B968-24D47612CA0C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "User_Management", "User_Management\User_Management.csproj", "{F89880DA-FFB5-4837-B092-E5A729D44154}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "User_Management", "User_Management\User_Management.csproj", "{F89880DA-FFB5-4837-B092-E5A729D44154}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Portal", "Portal\Portal.csproj", "{1190255E-D288-4DDC-8219-5B28CFBB6CBC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Portal", "Portal\Portal.csproj", "{1190255E-D288-4DDC-8219-5B28CFBB6CBC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

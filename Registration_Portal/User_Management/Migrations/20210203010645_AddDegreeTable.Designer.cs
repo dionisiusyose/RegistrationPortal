@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using User_Management.Context;
 
 namespace User_Management.Migrations
 {
     [DbContext(typeof(MyContext))]
-    partial class MyContextModelSnapshot : ModelSnapshot
+    [Migration("20210203010645_AddDegreeTable")]
+    partial class AddDegreeTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -52,8 +54,8 @@ namespace User_Management.Migrations
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
-                    b.Property<string>("DegreeId")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<string>("Degree")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("DepartmentId")
                         .HasColumnType("nvarchar(450)");
@@ -68,8 +70,6 @@ namespace User_Management.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("DegreeId");
 
                     b.HasIndex("DepartmentId");
 
@@ -224,10 +224,6 @@ namespace User_Management.Migrations
 
             modelBuilder.Entity("User_Management.Models.Education", b =>
                 {
-                    b.HasOne("User_Management.Models.Degree", "Degree")
-                        .WithMany()
-                        .HasForeignKey("DegreeId");
-
                     b.HasOne("User_Management.Models.Department", "Department")
                         .WithMany("UniversityDepartment")
                         .HasForeignKey("DepartmentId");
@@ -235,8 +231,6 @@ namespace User_Management.Migrations
                     b.HasOne("User_Management.Models.University", "University")
                         .WithMany("UnivDepts")
                         .HasForeignKey("UniversityId");
-
-                    b.Navigation("Degree");
 
                     b.Navigation("Department");
 

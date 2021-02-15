@@ -10,7 +10,7 @@ namespace User_Management.Context
     public class MyContext : DbContext
     {
         public MyContext(DbContextOptions options) : base(options) { }
-
+        public DbSet<Degree> Degrees { get; set; }
         public DbSet<Employee> Employees { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<Role> Roles { get; set; }
