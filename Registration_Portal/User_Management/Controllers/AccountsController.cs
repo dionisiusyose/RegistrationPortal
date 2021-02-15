@@ -36,6 +36,7 @@ namespace User_Management.Controllers
             _myContext = myContext;
         }
 
+        // Register
         [HttpPost(nameof(RegisterUser))]
         public async Task<int> RegisterUser(GeneralVM data)
         {
@@ -59,6 +60,7 @@ namespace User_Management.Controllers
             return result;
         }
 
+        // Login
         [HttpPost(nameof(Login))]
         public async Task<string> Login(GeneralVM data)
         {
@@ -113,6 +115,7 @@ namespace User_Management.Controllers
             else return null;
         }
 
+        // Change Password
         [Authorize(AuthenticationSchemes = "Bearer")]
         [HttpPut(nameof(ChangePassword))]
         public async Task<int> ChangePassword(GeneralVM data)
@@ -128,6 +131,7 @@ namespace User_Management.Controllers
 
         }
 
+        // Forgot Password
         [HttpPatch(nameof(ForgotPassword))]
         public async Task<int> ForgotPassword(GeneralVM data)
         {
